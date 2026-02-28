@@ -1,0 +1,56 @@
+# Skill Registry
+
+Community skill registry for [crew](https://github.com/humanagency-org/crew-rs). Users can discover and install skills directly from the CLI.
+
+## Usage
+
+```bash
+# Browse all available skills
+crew skills search
+
+# Search by keyword
+crew skills search slides
+
+# Install a skill package
+crew skills install user/repo
+```
+
+## Submit Your Skills
+
+Add your skill package by submitting a PR that appends an entry to `registry.json`:
+
+```json
+{
+  "name": "my-skills",
+  "description": "Short description of what your skills do",
+  "repo": "your-github-user/your-repo",
+  "skills": ["skill-a", "skill-b"],
+  "requires": ["git", "node"],
+  "tags": ["keyword1", "keyword2"]
+}
+```
+
+### Fields
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `name` | yes | Package name (unique identifier) |
+| `description` | yes | One-line description |
+| `repo` | yes | GitHub path `user/repo` |
+| `skills` | no | List of individual skill names in the package |
+| `requires` | no | External tools needed (e.g. `git`, `node`, `python`) |
+| `tags` | no | Searchable keywords |
+
+### Skill Repo Structure
+
+Your repo should contain directories with `SKILL.md` files:
+
+```
+your-repo/
+  skill-a/
+    SKILL.md
+    ...
+  skill-b/
+    SKILL.md
+    ...
+```
