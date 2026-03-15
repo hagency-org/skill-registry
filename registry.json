@@ -20,7 +20,7 @@
       "comic", "manga", "xkcd", "snoopy",
       "infographic", "tshirt", "print", "art-deco", "matisse", "cubism", "symbolism", "ligne-claire", "woodcut",
       "research", "deep-research",
-      "tts", "voice-cloning", "speech", "audio", "qwen3-tts",
+      "tts", "voice-cloning", "speech", "audio", "qwen3-tts", "emotion", "style-control", "speed-control",
       "news", "rss",
       "github", "issues", "pull-requests",
       "workflow", "automation"
