@@ -14,7 +14,7 @@
       "mofa-github",
       "mofa-workflow"
     ],
-    "requires": ["git", "cargo"],
+    "requires": ["git", "cargo", "ominix-api"],
     "tags": [
       "ai", "pptx", "image-gen", "gemini", "batch-api",
       "comic", "manga", "xkcd", "snoopy",
